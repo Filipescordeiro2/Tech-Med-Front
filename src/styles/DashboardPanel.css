@@ -1,0 +1,23 @@
+.dashboard-panel {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  margin-bottom: 20px; /* Espaçamento abaixo do painel */
+}
+
+.panel-stats {
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre os itens */
+  margin-top: 15px; /* Espaçamento acima dos itens */
+}
+
+.stat-item {
+  text-align: center; /* Centraliza o texto */
+}
+
+.stat-item span {
+  font-size: 24px; /* Tamanho do número */
+  font-weight: bold; /* Negrito */
+}

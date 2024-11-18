@@ -1,0 +1,25 @@
+.notification {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 300px; /* Largura da notificação */
+  text-align: center; /* Centraliza o texto */
+}
+
+.success {
+  background-color: #d4edda; /* Cor de fundo verde claro */
+  color: #155724; /* Cor do texto verde escuro */
+  border: 1px solid #c3e6cb; /* Borda verde */
+}
+
+.error {
+  background-color: #f8d7da; /* Cor de fundo vermelho claro */
+  color: #721c24; /* Cor do texto vermelho escuro */
+  border: 1px solid #f5c6cb; /* Borda vermelha */
+}
+
+.warning {
+  background-color: #fff3cd; /* Cor de fundo amarelo claro */
+  color: #856404; /* Cor do texto amarelo escuro */
+  border: 1px solid #ffeeba; /* Borda amarela */
+}

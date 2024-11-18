@@ -1,0 +1,18 @@
+.header {
+  background-color: #007bff; /* Azul do cabeçalho */
+  color: white;
+  padding: 15px 20px; /* Espaçamento interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 15px; /* Espaçamento entre o nome e o botão */
+}
