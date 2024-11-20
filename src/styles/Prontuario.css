@@ -1,0 +1,64 @@
+.profissional-home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Oculta a rolagem */
+}
+
+.criar-profissional-panel {
+  max-height: 70vh; /* Reduz a altura máxima do painel */
+  width: 60%; /* Reduz a largura do painel */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.descricao-caixa {
+  display: inline-block; /* Ajusta o tamanho ao conteúdo */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Fundo claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+  font-size: 14px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-top: 10px; /* Espaçamento acima */
+  white-space: pre-wrap; /* Mantém quebras de linha no texto */
+  max-width: 100%; /* Evita que a caixa ultrapasse a largura do container */
+  word-wrap: break-word; /* Quebra linhas se o texto for muito longo */
+}
+
+.pdf-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: background-color 0.3s;
+}
+
+.pdf-button:hover {
+  background-color: #0056b3;
+}
+
+.pdf-button svg {
+  margin-right: 5px;
+}

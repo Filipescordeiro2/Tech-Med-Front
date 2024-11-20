@@ -1,0 +1,36 @@
+.filter-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /* Define quatro colunas */
+  gap: 15px; /* Espaçamento entre os elementos */
+  padding: 20px;
+  align-items: center;
+}
+
+.filter-container label {
+  text-align: right; /* Alinha as labels à direita */
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.filter-container input {
+  width: 150px; /* Largura ajustada */
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-container button {
+  grid-column: 4; /* Posiciona o botão na quarta coluna */
+  padding: 7px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-container button:hover {
+  background-color: #0056b3;
+}

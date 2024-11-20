@@ -1,0 +1,97 @@
+thead {
+  background-color: #007bff; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto do cabeçalho */
+}
+
+th, td {
+  padding: 10px; /* Espaçamento interno das células */
+  border: 1px solid #ccc; /* Borda das células */
+  text-align: left; /* Alinhamento do texto */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cor de fundo das linhas pares */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.actions-column {
+  display: flex;
+  align-items: center;
+}
+
+.actions-column button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.actions-column button:first-child {
+  background-color: #ccffcc; /* Cor de fundo verde bem clarinha */
+  color: #008000; /* Cor do texto verde */
+  margin-right: 10px;
+  width: 150px; /* Aumenta a largura do botão */
+}
+
+.actions-column button:first-child:hover {
+  background-color: #99ff99; /* Cor de fundo verde clara ao passar o mouse */
+}
+
+.actions-column button:nth-child(2) {
+  background-color: #ffe6e6; /* Cor de fundo vermelha bem clarinha */
+  color: #ff0000; /* Cor do texto vermelha */
+  margin-right: 10px;
+}
+
+.actions-column button:nth-child(2):hover {
+  background-color: #ffcccc; /* Cor de fundo vermelha clara ao passar o mouse */
+}
+
+.actions-column button.realizar-agendamento {
+  background-color: #fffacd; /* Cor de fundo amarelo claro */
+  color: #000; /* Cor do texto preto */
+}
+
+.actions-column button.realizar-agendamento:hover {
+  background-color: #fff8b3; /* Cor de fundo amarelo mais escuro ao passar o mouse */
+}
+
+.actions-column button.visualizar-agendamento {
+  background-color: #e6e6ff; /* Cor de fundo azul bem clarinha */
+  color: #0000ff; /* Cor do texto azul */
+}
+
+.actions-column button.visualizar-agendamento:hover {
+  background-color: #ccccff; /* Cor de fundo azul clara ao passar o mouse */
+}
+
+.actions-column button.disabled {
+  background-color: #f0f0f0; /* Cor de fundo cinza claro */
+  color: #a0a0a0; /* Cor do texto cinza */
+  cursor: not-allowed; /* Cursor não permitido */
+}

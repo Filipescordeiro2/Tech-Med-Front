@@ -1,0 +1,122 @@
+.clinica-home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Oculta a rolagem */
+}
+
+.criar-clinica-panel {
+  max-height: 80vh; /* Altura máxima do painel */
+  width: 80%; /* Largura do painel */
+  margin: 0 auto; /* Centraliza o painel horizontalmente */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical */
+  padding: 30px; /* Aumenta o espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo do painel */
+  border: 1px solid #e0e0e0; /* Borda do painel */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+form {
+  display: flex; /* Usar flexbox para o layout do formulário */
+  flex-wrap: wrap; /* Permitir que os campos se movam para a próxima linha */
+  gap: 20px; /* Espaço entre os campos */
+}
+
+h4 {
+  margin-bottom: 15px; /* Aumenta o espaço abaixo do título h4 */
+  width: 100%; /* Garante que o título ocupe toda a largura */
+  font-size: 20px; /* Tamanho do título */
+  color: #333; /* Cor do título */
+}
+
+input,
+select { /* Estilizando tanto input quanto select */
+  flex: 1 1 100%; /* Cada campo ocupa 100% do espaço disponível */
+  margin-bottom: 15px; /* Adiciona espaço entre os campos */
+  padding: 12px; /* Aumenta o espaçamento interno dos campos */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  border: 1px solid #ccc; /* Borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #fff; /* Cor de fundo do select */
+  transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+input:focus,
+select:focus { /* Estilo ao focar no campo */
+  border-color: #007bff; /* Cor da borda ao focar no campo */
+  outline: none; /* Remove o contorno padrão */
+}
+
+button {
+  padding: 12px; /* Aumenta o espaçamento interno do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s, transform 0.2s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Estilo para os títulos do formulário */
+h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 24px; /* Tamanho do título */
+  color: #333; /* Cor do título */
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para a seção de gráficos */
+.charts-container {
+  display: flex; /* Usar flexbox para alinhar os cards lado a lado */
+  flex-wrap: wrap; /* Permitir que os cards se movam para a próxima linha se não houver espaço suficiente */
+  margin-bottom: 20px; /* Espaço entre as seções */
+}
+
+.chart {
+  flex: 1 1 10%; /* Cada card ocupa 30% do espaço disponível */
+  margin: 10px; /* Margem entre os cards */
+  padding: 10px; /* Espaçamento interno do card */
+  border: 1px solid #ccc; /* Borda do card */
+  border-radius: 15px; /* Bordas arredondadas */
+  background-color: #f9f9f9; /* Cor de fundo do card */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: transform 0.2s; /* Transição suave ao passar o mouse */
+}
+
+.chart:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.icon {
+  margin-right: 5px; /* Espaço entre o ícone e o título */
+  font-size: 18px; /* Tamanho do ícone */
+  color: #007bff; /* Cor do ícone */
+}
+
+/* Estilo para a lista de especialidades selecionadas */
+ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.especialidade-item { /* Estilo específico para as especialidades selecionadas */
+  background-color: #e7f3ff; /* Cor de fundo para as especialidades selecionadas */
+  border: 1px solid #007bff; /* Borda azul */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 8px; /* Espaçamento interno */
+  margin: 5px 0; /* Margem entre os itens da lista */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
