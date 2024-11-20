@@ -40,11 +40,8 @@ function Login() {
         result = await authenticateProfessional(loginData);
       }
 
-<<<<<<< HEAD
       ToastrService.success('Login bem-sucedido!');
-=======
       ToastrService.showNotification('success', 'Login bem-sucedido!');
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
       console.log('Login bem-sucedido:', result);
 
       setUser({
@@ -64,11 +61,8 @@ function Login() {
         navigate('/professional');
       }
     } catch (err) {
-<<<<<<< HEAD
       ToastrService.error('Falha na autenticação. Verifique suas credenciais.');
-=======
       ToastrService.showNotification('error', 'Falha na autenticação. Verifique suas credenciais.');
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
     }
   };
 
@@ -123,8 +117,4 @@ function Login() {
   );
 }
 
-<<<<<<< HEAD
 export default Login;
-=======
-export default Login;
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b

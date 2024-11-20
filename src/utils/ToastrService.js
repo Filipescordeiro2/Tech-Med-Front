@@ -26,7 +26,6 @@ class ToastrService {
     };
   }
 
-<<<<<<< HEAD
   success(message) {
     toastr.success(message);
   }
@@ -42,10 +41,7 @@ class ToastrService {
   info(message) {
     toastr.info(message);
   }
-}
 
-export default new ToastrService(); // Exportando uma instância da classe
-=======
   showNotification(type, message) {
     switch (type) {
       case 'success':
@@ -66,5 +62,4 @@ export default new ToastrService(); // Exportando uma instância da classe
   }
 }
 
-export default new ToastrService(); // Exportando uma instância da classe 
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
+export default new ToastrService(); // Exportando uma instância da classe

@@ -44,11 +44,8 @@ function Sidebar() {
         {patientsOpen && (
           <ul className="submenu">
             <li>Dados Pacientes</li>
-<<<<<<< HEAD
             <li onClick={()=>window.location.href='/prontuarioMedico'}>Prontuario Paciente</li>
-=======
             <li>Exames Pacientes</li>
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
             <li>Procediementos Pacientes</li>
             <li>Medicamentos Paciente</li>
             <li>Agendamentos Paciente</li>
@@ -60,16 +57,13 @@ function Sidebar() {
         </li>
         {staffOpen && (
           <ul className="submenu">
-<<<<<<< HEAD
             <li onClick={()=>window.location.href='/analisarAgendaClinica'}>Agendas Clinicas</li>
             <li onClick={()=>window.location.href='/criarClinica'}>Criar Clinica</li>
             <li onClick={()=>window.location.href='/incluirProfissional'}>Incluir Medico</li>
 
-=======
             <li>Incluir Medico</li>
             <li onClick={()=>window.location.href='/analisarAgendaClinica'}>Agendas Clinicas</li>
             <li onClick={()=>window.location.href='/criarClinica'}>Criar Clinica</li>
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
           </ul>
         )}
       </ul>

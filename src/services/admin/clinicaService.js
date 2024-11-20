@@ -1,11 +1,7 @@
 import axios from 'axios';
 
 const API_URL = 'http://localhost:8080/clinicas';
-<<<<<<< HEAD
 const PROFISSIONAIS_CLINICA_URL = 'http://localhost:8080/profissionais-clinica';
-=======
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
-
 export const criarClinica = async (dados) => {
   try {
     const response = await axios.post(API_URL, dados); // Envia os dados para a API
@@ -77,9 +73,7 @@ export const buscarProfissionaisClinica = async (clinicaId) => {
     console.error('Erro ao buscar profissionais da clínica:', error);
     throw error;
   }
-<<<<<<< HEAD
 };
-
 export const IncluirProfissionalNaClinica = async (clinicaId, profissionalId) => {
   try {
     const response = await axios.post(PROFISSIONAIS_CLINICA_URL, {
@@ -91,6 +85,4 @@ export const IncluirProfissionalNaClinica = async (clinicaId, profissionalId) =>
     console.error('Erro ao incluir profissional na clínica:', error);
     throw error;
   }
-=======
->>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
 };
