@@ -26,6 +26,7 @@ class ToastrService {
     };
   }
 
+<<<<<<< HEAD
   success(message) {
     toastr.success(message);
   }
@@ -44,3 +45,26 @@ class ToastrService {
 }
 
 export default new ToastrService(); // Exportando uma instância da classe
+=======
+  showNotification(type, message) {
+    switch (type) {
+      case 'success':
+        toastr.success(message);
+        break;
+      case 'error':
+        toastr.error(message);
+        break;
+      case 'warning':
+        toastr.warning(message);
+        break;
+      case 'info':
+        toastr.info(message);
+        break;
+      default:
+        console.warn('Tipo de notificação desconhecido:', type);
+    }
+  }
+}
+
+export default new ToastrService(); // Exportando uma instância da classe 
+>>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b

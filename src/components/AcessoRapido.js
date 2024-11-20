@@ -22,9 +22,15 @@ function AcessoRapido() {
       <DashboardPanel />
       <div className="charts-container">
         <h3>Paciente</h3>
+<<<<<<< HEAD
         <div className="chart" onClick={() => handleCardClick('Prontuario Paciente','/prontuarioMedico')}>
           <FontAwesomeIcon icon={faFlask} className="icon" />
           <h4>Prontuario Paciente</h4>
+=======
+        <div className="chart" onClick={() => handleCardClick('Exames Paciente')}>
+          <FontAwesomeIcon icon={faFlask} className="icon" />
+          <h4>Exames Paciente</h4>
+>>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
         </div>
         <div className="chart" onClick={() => handleCardClick('Procedimentos Paciente')}>
           <FontAwesomeIcon icon={faProcedures} className="icon" />
@@ -62,7 +68,11 @@ function AcessoRapido() {
           <FontAwesomeIcon icon={faCalendarPlus} className="icon" />
           <h4>Agendas Clínica</h4>
         </div>
+<<<<<<< HEAD
         <div className="chart" onClick={() => handleCardClick('Incluir Profissional','/incluirProfissional')}>
+=======
+        <div className="chart" onClick={() => handleCardClick('Incluir Profissional')}>
+>>>>>>> 3266ea51e60edee22d1b157d47c4c994b2b3c35b
           <FontAwesomeIcon icon={faUserPlus} className="icon" />
           <h4>Incluir Profissional</h4>
         </div>
