@@ -30,11 +30,9 @@ function Sidebar() {
         </li>
         {doctorsOpen && (
           <ul className="submenu">
-            <li onClick={() => window.location.href = '/criarProfissional'}>Criar usuario Medico</li>
+            <li onClick={() => window.location.href = '/criarProfissional'}>Criar Usuario Medico</li>
             <li onClick={() => window.location.href = '/criarAgendaProfissional'}>Criar Agenda Medico</li>
             <li onClick={() => window.location.href = '/analisarAgendaProfissional'}>Agenda dos profissionais</li>
-            <li>Lista de Medicos</li>
-            <li>Editar Profssional</li>
           </ul>
         )}
         <li onClick={togglePatientsMenu}>
@@ -45,9 +43,6 @@ function Sidebar() {
           <ul className="submenu">
             <li>Dados Pacientes</li>
             <li onClick={()=>window.location.href='/prontuarioMedico'}>Prontuario Paciente</li>
-            <li>Exames Pacientes</li>
-            <li>Procediementos Pacientes</li>
-            <li>Medicamentos Paciente</li>
             <li>Agendamentos Paciente</li>
           </ul>
         )}
@@ -60,10 +55,6 @@ function Sidebar() {
             <li onClick={()=>window.location.href='/analisarAgendaClinica'}>Agendas Clinicas</li>
             <li onClick={()=>window.location.href='/criarClinica'}>Criar Clinica</li>
             <li onClick={()=>window.location.href='/incluirProfissional'}>Incluir Medico</li>
-
-            <li>Incluir Medico</li>
-            <li onClick={()=>window.location.href='/analisarAgendaClinica'}>Agendas Clinicas</li>
-            <li onClick={()=>window.location.href='/criarClinica'}>Criar Clinica</li>
           </ul>
         )}
       </ul>

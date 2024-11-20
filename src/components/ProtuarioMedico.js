@@ -82,7 +82,7 @@ function ProtuarioMedico() {
       <table>
         <thead>
           <tr>
-            <th>Data</th>
+            <th>Data da Consulta</th>
             <th>Profissional</th>
             <th></th>
           </tr>

@@ -73,6 +73,10 @@ function Prontuario({ prontuario }) {
           <li key={medicamento.id}>{medicamento.medicamento}</li>
         ))}
       </ul>
+      <div className="assinatura-eletronica">
+        <p><strong>Assinatura Eletrônica do Profissional:</strong></p>
+        <p>{`${prontuario.profissionalNome} ${prontuario.profissionalSobrenome}`}</p>
+      </div>
       <button className="pdf-button" onClick={generatePDF}>
         <FaFilePdf /> Gerar PDF
       </button>

@@ -148,3 +148,4 @@ export const buscarEnderecoClinica = async (clinicaId) => {
     throw error; // Lança o erro para ser tratado onde a função for chamada
   }
 };
+

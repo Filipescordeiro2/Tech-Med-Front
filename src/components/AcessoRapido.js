@@ -26,10 +26,6 @@ function AcessoRapido() {
           <FontAwesomeIcon icon={faFlask} className="icon" />
           <h4>Prontuario Paciente</h4>
         </div>
-        <div className="chart" onClick={() => handleCardClick('Exames Paciente')}>
-          <FontAwesomeIcon icon={faFlask} className="icon" />
-          <h4>Exames Paciente</h4>
-        </div>
         <div className="chart" onClick={() => handleCardClick('Procedimentos Paciente')}>
           <FontAwesomeIcon icon={faProcedures} className="icon" />
           <h4>Procedimentos Paciente</h4>

@@ -27,6 +27,9 @@ function CriarProfissional() {
       estado: '',
       pais: 'Brasil'
     }],
+    orgaoRegulador: '',
+    numeroRegistro: '',
+    ufOrgaoRegulador: '',
     especialidades: [], // Inicializa como um array vazio
     senha: ''
   });
@@ -143,7 +146,16 @@ function CriarProfissional() {
             <button type="button" onClick={handleNextStep}>Próximo</button> {/* Avança para o próximo passo */}
           </>
         )}
-        {step === 3 && ( // Passo 3: Especialidades
+        {step === 3 && ( // Passo 3: Dados do Órgão Regulador
+          <>
+            <h4>Dados do Órgão Regulador</h4>
+            <input type="text" name="orgaoRegulador" placeholder="Órgão Regulador" onChange={handleInputChange} required />
+            <input type="text" name="numeroRegistro" placeholder="Número de Registro" onChange={handleInputChange} required />
+            <input type="text" name="ufOrgaoRegulador" placeholder="UF do Órgão Regulador" onChange={handleInputChange} required />
+            <button type="button" onClick={handleNextStep}>Próximo</button> {/* Avança para o próximo passo */}
+          </>
+        )}
+        {step === 4 && ( // Passo 4: Especialidades
           <>
             <h4>Especialidade</h4>
             <select name="especialidade" onChange={(e) => setSelectedSpecialty(e.target.value)} required>
@@ -166,7 +178,7 @@ function CriarProfissional() {
             <button type="button" onClick={handleNextStep}>Próximo</button> {/* Avança para o próximo passo */}
           </>
         )}
-        {step === 4 && ( // Passo 4: Senha
+        {step === 5 && ( // Passo 5: Senha
           <>
             <h4>Senha de Acesso</h4>
             <input type="password" name="senha" placeholder="Senha" onChange={handleInputChange} required />
