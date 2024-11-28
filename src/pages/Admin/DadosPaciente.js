@@ -1,20 +1,20 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import AcessoRapidoAnalisarAgendaClinica from '../../components/AnalisarAgendaClinica';
-import '../../styles/AnalisarAgendaClinica.css';
+import AcessoRapidoDadosPaciente from '../../components/DadosPaciente';
+import '../../styles/DadosPaciente.css';
 
-function AnalisarAgendaClinica() {
+function DadosPaciente() {
   return (
     <div className="profissional-home">
       <Header />
       <br/>
       <div className="main-content">
         <Sidebar />
-        <AcessoRapidoAnalisarAgendaClinica/>
+        <AcessoRapidoDadosPaciente/>
       </div>
     </div>
   );
 }
 
-export default AnalisarAgendaClinica;
+export default DadosPaciente;

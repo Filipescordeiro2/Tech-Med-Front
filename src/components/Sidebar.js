@@ -41,9 +41,9 @@ function Sidebar() {
         </li>
         {patientsOpen && (
           <ul className="submenu">
-            <li>Dados Pacientes</li>
+            <li onClick={()=>window.location.href='/dadosPaciente'}>Dados Pacientes</li>
             <li onClick={()=>window.location.href='/prontuarioMedico'}>Prontuario Paciente</li>
-            <li>Agendamentos Paciente</li>
+            <li onClick={()=>window.location.href='/agendaPaciente'}>Agendamentos Paciente</li>
           </ul>
         )}
         <li onClick={toggleStaffMenu}>

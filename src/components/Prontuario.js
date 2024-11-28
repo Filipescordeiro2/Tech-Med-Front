@@ -76,6 +76,8 @@ function Prontuario({ prontuario }) {
       <div className="assinatura-eletronica">
         <p><strong>Assinatura Eletrônica do Profissional:</strong></p>
         <p>{`${prontuario.profissionalNome} ${prontuario.profissionalSobrenome}`}</p>
+        <p>{`${prontuario.orgaoRegulador} - ${prontuario.numeroRegistro} / ${prontuario.ufRegistro}`}</p>
+        <p>{formatDate(prontuario.dataConsulta)}</p>
       </div>
       <button className="pdf-button" onClick={generatePDF}>
         <FaFilePdf /> Gerar PDF

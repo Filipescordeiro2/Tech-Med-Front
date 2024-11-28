@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ModalAgendamento from '../utils/ModalAgendamento';
 import '../styles/PaginationTable.css'; // Importa o arquivo CSS para estilização
 
-const PaginationTable = ({ data, columns, itemsPerPage, onEyeClick, onCancelClick, onViewClick }) => {
+const PaginationTable = ({ data, columns, itemsPerPage, onEyeClick, onCancelClick, onViewClick, showActions = true }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [showModalAgendamento, setShowModalAgendamento] = useState(false);
   const [selectedAgendaId, setSelectedAgendaId] = useState(null);
@@ -28,28 +28,30 @@ const PaginationTable = ({ data, columns, itemsPerPage, onEyeClick, onCancelClic
         <thead>
           <tr>
             {columns.map((column, index) => (
-              column.accessor !== 'codigoAgenda' && <th key={index}>{column.header}</th>
+              <th key={index}>{column.header}</th>
             ))}
-            <th>Ações</th> {/* Adiciona a coluna de ações */}
+            {showActions && <th>Ações</th>} {/* Adiciona a coluna de ações condicionalmente */}
           </tr>
         </thead>
         <tbody>
           {currentItems.map((item, index) => (
             <tr key={index}>
               {columns.map((column, colIndex) => (
-                column.accessor !== 'codigoAgenda' && <td key={colIndex}>{item[column.accessor]}</td>
+                <td key={colIndex}>{item[column.accessor]}</td>
               ))}
-              <td className="actions-column">
-                <button onClick={() => onEyeClick(item.codigoClinica)} style={{ cursor: 'pointer', marginRight: '10px' }}>Endereço Clínica</button>
-                <button onClick={() => onCancelClick(item.codigoAgenda)} style={{ cursor: 'pointer', marginRight: '10px' }}>Cancelar</button>
-                <button 
-                  onClick={() => item.statusAgenda !== 'AGENDADO' ? handleRealizarAgendamentoClick(item.codigoAgenda) : onViewClick(item.codigoAgenda)} 
-                  style={{ cursor: 'pointer' }}
-                  className={item.statusAgenda !== 'AGENDADO' ? 'realizar-agendamento' : 'visualizar-agendamento'}
-                >
-                  {item.statusAgenda !== 'AGENDADO' ? 'Realizar Agendamento' : 'Visualizar Agendamento'}
-                </button>
-              </td>
+              {showActions && (
+                <td className="actions-column">
+                  <button onClick={() => onEyeClick(item.codigoClinica)} style={{ cursor: 'pointer', marginRight: '10px' }}>Endereço Clínica</button>
+                  <button onClick={() => onCancelClick(item.codigoAgenda)} style={{ cursor: 'pointer', marginRight: '10px' }}>Cancelar</button>
+                  <button 
+                    onClick={() => item.statusAgenda !== 'AGENDADO' ? handleRealizarAgendamentoClick(item.codigoAgenda) : onViewClick(item.codigoAgenda)} 
+                    style={{ cursor: 'pointer' }}
+                    className={item.statusAgenda !== 'AGENDADO' ? 'realizar-agendamento' : 'visualizar-agendamento'}
+                  >
+                    {item.statusAgenda !== 'AGENDADO' ? 'Realizar Agendamento' : 'Visualizar Agendamento'}
+                  </button>
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

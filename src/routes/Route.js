@@ -10,6 +10,9 @@ import AnalisarAgendaClinica from '../pages/Admin/AnalisarAgendaClinica';
 import IncluirProfissional from '../pages/Admin/IncluirProfissional';
 import ProtuarioMedico from '../pages/Admin/ProtuarioMedico';
 import ProntuarioPage from '../pages/Admin/ProntuarioPage'; // Importando a página do prontuário
+import AgendaCliente from '../pages/Admin/AgendaCliente'; // Importando a página da agenda do cliente
+import DadosPaciente from '../pages/Admin/DadosPaciente'; // Importando a página da agenda do cliente
+
 
 function AppRoutes() {
   return (
@@ -24,6 +27,9 @@ function AppRoutes() {
       <Route path="/incluirProfissional" element={<IncluirProfissional />} />
       <Route path="/prontuarioMedico" element={<ProtuarioMedico />} />
       <Route path="/prontuario/:id" element={<ProntuarioPage />} /> {/* Rota para a página do prontuário */}
+      <Route path="/agendaCliente" element={<AgendaCliente />} /> {/* Rota para a página do prontuário */}
+      <Route path="/dadosPaciente" element={<DadosPaciente />} /> {/* Rota para a página do prontuário */}
+
 
       {/* Adicione outras rotas aqui */}
     </Routes>

@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import AcessoRapidoAnalisarAgendaClinica from '../../components/AnalisarAgendaClinica';
-import '../../styles/AnalisarAgendaClinica.css';
+import AcessoRapidoAnalisarAgendaCliente from '../../components/AgendaCliente';
+import '../../styles/AgendaCliente.css';
 
 function AnalisarAgendaClinica() {
   return (
@@ -11,7 +11,7 @@ function AnalisarAgendaClinica() {
       <br/>
       <div className="main-content">
         <Sidebar />
-        <AcessoRapidoAnalisarAgendaClinica/>
+        <AcessoRapidoAnalisarAgendaCliente/>
       </div>
     </div>
   );

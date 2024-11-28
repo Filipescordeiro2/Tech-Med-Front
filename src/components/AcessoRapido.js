@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Importando useNavigate
 import DashboardPanel from './DashboardPanel';
 import '../styles/AcessoRapido.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFlask, faPills, faProcedures, faUserPlus, faCalendarPlus, faClipboardList, faClinicMedical } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faAddressCard, faCalendarAlt, faUserPlus, faCalendarPlus, faClipboardList, faClinicMedical } from '@fortawesome/free-solid-svg-icons';
 
 function AcessoRapido() {
   const navigate = useNavigate(); // Inicializando useNavigate
@@ -23,16 +23,16 @@ function AcessoRapido() {
       <div className="charts-container">
         <h3>Paciente</h3>
         <div className="chart" onClick={() => handleCardClick('Prontuario Paciente','/prontuarioMedico')}>
-          <FontAwesomeIcon icon={faFlask} className="icon" />
+          <FontAwesomeIcon icon={faUser} className="icon" />
           <h4>Prontuario Paciente</h4>
         </div>
-        <div className="chart" onClick={() => handleCardClick('Procedimentos Paciente')}>
-          <FontAwesomeIcon icon={faProcedures} className="icon" />
-          <h4>Procedimentos Paciente</h4>
+        <div className="chart" onClick={() => handleCardClick('Dados Paciente','/dadosPaciente')}>
+          <FontAwesomeIcon icon={faAddressCard} className="icon" />
+          <h4>Dados Paciente</h4>
         </div>
-        <div className="chart" onClick={() => handleCardClick('Medicamentos Paciente')}>
-          <FontAwesomeIcon icon={faPills} className="icon" />
-          <h4>Medicamentos Paciente</h4>
+        <div className="chart" onClick={() => handleCardClick('Agenda Paciente','/agendaCliente')}>
+          <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
+          <h4>Agendametos Paciente</h4>
         </div>
       </div>
 
